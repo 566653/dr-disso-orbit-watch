@@ -1,0 +1,30 @@
+[
+  {
+    "field": "temperature_c",
+    "op": "gt",
+    "value": 80,
+    "severity": "high",
+    "message": "High equipment temperature"
+  },
+  {
+    "field": "packet_loss_pct",
+    "op": "gt",
+    "value": 5,
+    "severity": "medium",
+    "message": "Telemetry packet loss"
+  },
+  {
+    "field": "signal_db",
+    "op": "lt",
+    "value": -105,
+    "severity": "medium",
+    "message": "Weak signal"
+  },
+  {
+    "field": "authorized_link",
+    "op": "eq",
+    "value": false,
+    "severity": "critical",
+    "message": "Link authorization missing"
+  }
+]
